@@ -1,7 +1,7 @@
 const gulp  = require('gulp');
 const browserSync = require('browser-sync').create();
 var   fractalBuildMode;
-
+const deploy      = require('gulp-gh-pages');
 // -----------------------------------------------------------------------------
 // Configuration
 // -----------------------------------------------------------------------------
@@ -132,3 +132,11 @@ gulp.task('dev', gulp.series(
   'browser-sync',
   gulp.parallel('watch','vf-watch')
 ));
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function () {
+  return gulp.src("./build/**/*")
+    .pipe(deploy())
+});
