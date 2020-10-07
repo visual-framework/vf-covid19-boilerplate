@@ -3,69 +3,42 @@
 <head>
   <meta charset="utf-8">
   <title>COVID-19 Data Portal</title>
-  <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/assets/favicon/site.webmanifest">
-  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" media="all" href="/vf-covid19-boilerplate/css/styles.css" />
+  <link rel="stylesheet" media="all" href="/vf-covid19-boilerplate/css/custom_styles.css" />
 </head>
-
-<body class="cv-19">
+<body class="vf-body">
 <div class="vf-body" id="topAnchor">
   <header class="vf-header">
     <div class="vf-global-header">
       <div class="vf-global-header__inner">
-        <a routerLinkActive #rla1="routerLinkActive"
-           label="CV19-PORTAL" [routerLink]="['/']" class="vf-logo__image">
-          <img class="vf-logo__image" src="/assets/img/CV19DP_logo_oneliner2.svg" alt="CV19-PORTAL">
-          <!-- <span class="vf-logo__text">Covid 19 Portal</span> -->
+        <a
+                label="CV19-PORTAL" class="vf-logo__image">
+          <img class="vf-logo__image" src="/vf-covid19-boilerplate/images/CV19DP_logo_oneliner2.svg" alt="CV19-PORTAL">
+<!--          <span class="vf-logo__text">Covid 19 Portal</span>-->
         </a>
-
-        <nav data-vf-google-analytics-region="main-navigation-area" class="vf-navigation vf-navigation--global vf-u-margin__top--xxl">
+        <nav class="vf-navigation vf-navigation--global vf-u-margin__top--xxl">
           <ul class="vf-navigation__list | vf-list--inline">
             <li class="vf-navigation__item">
-              <a routerLinkActive #rla1="routerLinkActive"
-                 [class.top-nav-active]="rla1.isActive" label="About" [routerLink]="['/about']"
+              <a href="#" label="About"
                  class="vf-navigation__link"> About </a>
-              <!-- <a href="/about" class="vf-navigation__link">About</a> -->
             </li>
             <li class="vf-navigation__item">
-              <a routerLinkActive #rla2="routerLinkActive"
-                 [class.top-nav-active]="rla2.isActive" label="Data Hubs" [routerLink]="['/data-hubs']"
-                 class="vf-navigation__link"> Data Hubs </a>
-              <!-- <a href="/data-hubs" class="vf-navigation__link">Data Hubs</a> -->
+              <a href="#" label="Link 1"
+                 class="vf-navigation__link"> Link 1 </a>
             </li>
             <li class="vf-navigation__item">
-              <a routerLinkActive #rla1="routerLinkActive"
-                 [class.top-nav-active]="rla1.isActive" label="About" [routerLink]="['/federated-ega']"
-                 class="vf-navigation__link"> Federated EGA </a>
-              <!-- <a href="/about" class="vf-navigation__link">About</a> -->
+              <a href="#" label="Link 2"
+                 class="vf-navigation__link"> Link 2</a>
             </li>
             <li class="vf-navigation__item">
-              <a routerLinkActive #rla2="routerLinkActive"
-                 [class.top-nav-active]="rla2.isActive" [routerLink]="['/related-resources']"
+              <a href="#"
                  class="vf-navigation__link"
-                 label="Related resources"> Related resources </a>
+                 label="Link 3"> Link 3</a>
             </li>
             <li class="vf-navigation__item">
-              <a routerLinkActive #rla3="routerLinkActive"
-                 [class.top-nav-active]="rla3.isActive" label="Our partners" [routerLink]="['/partners']"
-                 class="vf-navigation__link"> Our partners </a>
-            </li>
-            <li class="vf-navigation__item">
-              <a class="vf-navigation__link" href="ftp://ftp.ebi.ac.uk/pub/databases/covid19dataportal/"
-                 label="Bulk downloads" target="_blank"> Bulk downloads </a>
-            </li>
-            <li class="vf-navigation__item">
-              <a routerLinkActive #rla4="routerLinkActive"
-                 [class.top-nav-active]="rla4.isActive" label="Submit data" [routerLink]="['/submit-data']"
-                 class="vf-navigation__link"> Submit data </a>
+              <a href="#"  label="Link 4"
+                 class="vf-navigation__link"> Link 4 </a>
             </li>
           </ul>
         </nav>
@@ -73,306 +46,224 @@
     </div>
   </header>
 </div>
-<!-- Mat Tab Nav Bar component -->
-<!-- <section class="vf-grid ">
-    <div>
-      <nav mat-tab-nav-bar>
-        <a mat-tab-link routerLinkActive #rla1="routerLinkActive"
-        [class.active]="rla1.isActive" label="Summary" [routerLink]="['/summary']">Summary</a>
-        <a mat-tab-link routerLinkActive #rla2="routerLinkActive"
-        [class.active]="rla2.isActive" label="Sequencing" [routerLink]="['/sequencing']">Sequencing</a>
-        <a mat-tab-link routerLinkActive #rla3="routerLinkActive"
-        [class.active]="rla3.isActive" label="Other data" [routerLink]="['/other-data']">Other data</a>
-      </nav>
-    </div>
-  </section> -->
-
+<!-- <div id="cv19-app-nav-container-top"></div> -->
+<div class="cv19-app-nav-container">
+  <div class="vf-body">
+    <section class="vf-grid cv19-app-nav vf-u-padding__top--sm vf-u-padding__bottom--sm">
+      <div class="vf-component__container">
+        <nav  class="vf-navigation vf-navigation--main">
+          <ul class="vf-navigation__list | vf-list--inline">
+            <li class="vf-navigation__item">
+              <a label="Sub Nav 1" title="Sub Nav 1" href="#" class="vf-navigation__link">Sub-Nav 1</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a label="Sub Nav 2" title="Sub Nav 2" href="#" class="vf-navigation__link">Sub-Nav 2</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a label="Sub Nav 3" title="Sub Nav 2" href="#" class="vf-navigation__link">Sub-Nav 3</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a label="Sub Nav 4" title="Sub Nav 3" href="#" class="vf-navigation__link">Sub-Nav 4</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a label="Sub Nav 5" title="Sub Nav 4" href="#" class="vf-navigation__link">Sub-Nav 5</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </div>
+</div>
 
 <!-- Display if Search is false -->
-<section  data-vf-google-analytics-region="hero-thin-area" [class.hero-thin]="thinHeroClass" [class.hero]="!thinHeroClass" *ngIf="!showSearchBox && !isSearchTab" class="vf-body vf-u-padding__top--md vf-u-padding__bottom--0">
-
+<section class="vf-body vf-u-padding__top--md vf-u-padding__bottom--0 hero">
   <!-- Display if Hero is default -->
-  <div *ngIf="!thinHeroClass" class="vf-grid vf-grid__col-3">
+  <div class="vf-grid vf-grid__col-3">
     <div class="vf-content vf-grid__col--span-2">
-      <h1 *ngIf="title"  class="vf-intro__heading vf-u-padding__top--xxl vf-u-margin__bottom--md">{{ title }}</h1>
-      <div *ngIf="!title" class="vf-u-padding__top--md vf-u-margin__bottom--md">&nbsp;</div>
-      <p [class.vf-lede]="!showSearchBox">
-        {{ subTitle }}
+      <div class="vf-u-padding__top--md vf-u-margin__bottom--md">&nbsp;</div>
+      <p class="vf-lede">
+        Accelerating research through data sharing
       </p>
       <p></p>
     </div>
     <div class="vf-content vf-grid__col--span-1">
     </div>
   </div>
-
-  <!-- Display if Hero is thin -->
-  <div *ngIf="thinHeroClass" class="embl-grid vf-u-margin__bottom--0">
-    <div class="">&nbsp;</div>
-    <div>
-      <h1 class="vf-intro__heading">{{ title }}</h1>
-    </div>
-    <div class="">&nbsp;</div>
-  </div>
 </section>
-
-<!-- Display if Search is true -->
-<section data-vf-google-analytics-region="hero-search-area" *ngIf="showSearchBox || isSearchTab" class="vf-body hero-search vf-u-padding__top--md vf-u-padding__bottom--md">
-  <div class="embl-grid vf-u-margin__bottom--0">
-    <div class="vf-section-header vf-content vf-grid__col--span-1">
-
-      <div>&nbsp;</div>
-    </div>
-    <div class="vf-content vf-grid__col--span-3">
-      <div class="vf-grid vf-grid__col-5">
-        <div class="vf-content vf-grid__col--span-4">
-
-          <h1 class="vf-intro__heading vf-u-margin__bottom--md">{{ title }}</h1>
-          <p [class.vf-lede]="!showSearchBox && !isSearchTab" [innerHtml]="subTitle"></p>
-
-          <search-box *ngIf="showSearchBox" ></search-box>
-        </div>
-        <div class="vf-content vf-grid__col--span-1">
-
-          <p></p>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Main content -->
-
-<!--
-  Collection of pages for VF inspiration:
-  - https://www.embl.org/explore/
-  - https://www.embl.org/partnerships/
-
--->
 
 <!-- Main intro -->
-<cv19-hero hasSearchBox="false"></cv19-hero>
 <div class="vf-body">
   <div class="vf-grid | vf-grid__col-3 vf-grid--has-sidebar vf-u-margin__top--xxl">
     <div class="vf-container__content vf-content vf-grid__col--span-2">
       <div class="vf-grid | vf-grid__col-2">
         <!-- Main blocks -->
-
         <article class="vf-summary vf-u-padding__right--xl">
           <div class="vf-section-header">
-            <a label="Sequences" [routerLink]="['/sequences']" class="vf-section-header__heading vf-section-header__heading--is-link">
-              Viral sequences
-              <svg aria-hidden="true" class="vf-section-header__icon | vf-icon vf-icon-arrow--inline-end" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z" fill="" fill-rule="nonzero"></path></svg>
-            </a>
-          </div>
-          <p class="vf-summary__text">Raw and assembled sequence and analysis of SARS-CoV-2 and other coronaviruses.</p>
-          <p><a label="Sequences" [routerLink]="['/sequences']" class="vf-link">{{ totSequences | number }} records ></a></p>
-          <p>&nbsp;</p>
-        </article>
-
-        <article class="vf-summary vf-u-padding__right--xl">
-          <div class="vf-section-header">
-            <a label="HostSequences" [routerLink]="['/host-sequences']" class="vf-section-header__heading vf-section-header__heading--is-link">
-              Host sequences
-              <svg aria-hidden="true" class="vf-section-header__icon | vf-icon vf-icon-arrow--inline-end" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z" fill="" fill-rule="nonzero"></path></svg>
-            </a>
-          </div>
-          <p class="vf-summary__text">Raw and assembled sequence and analysis of human and other hosts.</p>
-          <p><a label="HostSequences" [routerLink]="['/host-sequences']" class="vf-link">{{ totHostSequences | number }} records ></a></p>
-          <p>&nbsp;</p>
-        </article>
-
-        <article class="vf-summary  vf-u-padding__right--xl">
-          <div class="vf-section-header">
-            <a label="Expression" [routerLink]="['/expression']" class="vf-section-header__heading vf-section-header__heading--is-link">
-              Expression
-              <svg aria-hidden="true" class="vf-section-header__icon | vf-icon vf-icon-arrow--inline-end" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z" fill="" fill-rule="nonzero"></path></svg>
-            </a>
-          </div>
-          <p class="vf-summary__text">Gene and protein expression data of human genes implicated in the virus infection of the host cells. Identifying cell types and genes with highest expression in SARS-CoV-2 infections.</p>
-          <p><a label="Expression" [routerLink]="['/expression']" class="vf-link">{{ totExpressions | number }} records ></a></p>
-          <p>&nbsp;</p>
-        </article>
-
-        <article class="vf-summary vf-u-padding__right--xl">
-          <div class="vf-section-header">
-            <a label="Proteins" [routerLink]="['/proteins']" class="vf-section-header__heading vf-section-header__heading--is-link">
-              Proteins
-              <svg aria-hidden="true" class="vf-section-header__icon | vf-icon vf-icon-arrow--inline-end" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z" fill="" fill-rule="nonzero"></path></svg>
-            </a>
-          </div>
-          <p class="vf-summary__text">Curated functional and classification data on the SARS-CoV-2 protein entries and associated protein receptors.</p>
-          <p><a label="Proteins" [routerLink]="['/proteins']" class="vf-link">{{ totProteins | number }} records ></a></p>
-          <p>&nbsp;</p>
-        </article>
-
-        <article class="vf-summary vf-u-padding__right--xl">
-          <div class="vf-section-header">
-            <a label="Targets" [routerLink]="'/biochemistry'" class="vf-section-header__heading vf-section-header__heading--is-link">
-              Biochemistry
-              <svg aria-hidden="true" class="vf-section-header__icon | vf-icon vf-icon-arrow--inline-end" width="24" height="24"
-                   xmlns="http://www.w3.org/2000/svg">
-                <path
-                        d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z"
-                        fill="" fill-rule="nonzero"></path>
+            <a label="Some Label" href="#" class="vf-section-header__heading vf-section-header__heading--is-link">
+              Some Heading
+              <svg aria-hidden="true" class="vf-section-header__icon | vf-icon vf-icon-arrow--inline-end" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z" fill="" fill-rule="nonzero"></path>
               </svg>
             </a>
           </div>
-          <p class="vf-summary__text">COVID-19 pathways, interactions, complexes, targets and compounds.</p>
-          <p><a label="Biochemistry" [routerLink]="['/biochemistry']" class="vf-link">{{ totBiochemistry | number }} records ></a></p>
+          <p class="vf-summary__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum iaculis est vel tempus. Sed condimentum dolor sit amet hendrerit rutrum.</p>
+          <p><a label="Some Heading" href="#" class="vf-link">000 records ></a></p>
           <p>&nbsp;</p>
         </article>
         <article class="vf-summary vf-u-padding__right--xl">
           <div class="vf-section-header">
-            <a label="Literature" [routerLink]="'/literature'" class="vf-section-header__heading vf-section-header__heading--is-link">
-              Literature
-              <svg aria-hidden="true" class="vf-section-header__icon | vf-icon vf-icon-arrow--inline-end" width="24" height="24"
-                   xmlns="http://www.w3.org/2000/svg">
-                <path
-                        d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z"
-                        fill="" fill-rule="nonzero"></path>
+            <a label="Some Label" href="#" class="vf-section-header__heading vf-section-header__heading--is-link">
+              Some Heading
+              <svg aria-hidden="true" class="vf-section-header__icon | vf-icon vf-icon-arrow--inline-end" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z" fill="" fill-rule="nonzero"></path>
               </svg>
             </a>
           </div>
-          <p class="vf-summary__text">Search for the latest literature about SARS-CoV-2.</p>
-          <p><a label="Literature" [routerLink]="['/literature']" class="vf-link">{{ totLiterature | number }} publications ></a></p>
+          <p class="vf-summary__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum iaculis est vel tempus. Sed condimentum dolor sit amet hendrerit rutrum.</p>
+          <p><a label="Some Heading" href="#" class="vf-link">000 records ></a></p>
           <p>&nbsp;</p>
         </article>
-
-
         <article class="vf-summary vf-u-padding__right--xl">
           <div class="vf-section-header">
-            <a [routerLink]="['/related-resources']"
-               class="vf-section-header__heading vf-section-header__heading--is-link" label="Related resources"
-            >
-              Related resources
-              <svg aria-hidden="true" class="vf-section-header__icon | vf-icon vf-icon-arrow--inline-end"
-                   width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z"
-                      fill="" fill-rule="nonzero"></path>
+            <a label="Some Label" href="#" class="vf-section-header__heading vf-section-header__heading--is-link">
+              Some Heading
+              <svg aria-hidden="true" class="vf-section-header__icon | vf-icon vf-icon-arrow--inline-end" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z" fill="" fill-rule="nonzero"></path>
               </svg>
             </a>
           </div>
-          <p class="vf-summary__text">A range of related resources for studying the SARS-CoV-2 coronavirus and the
-            COVID-19 disease</p>
-          <!-- <p><a label="Proteins" [routerLink]="['/proteins']" class="vf-link">38 proteins ></a></p> -->
+          <p class="vf-summary__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum iaculis est vel tempus. Sed condimentum dolor sit amet hendrerit rutrum.</p>
+          <p><a label="Some Heading" href="#" class="vf-link">000 records ></a></p>
           <p>&nbsp;</p>
         </article>
-
+        <article class="vf-summary vf-u-padding__right--xl">
+          <div class="vf-section-header">
+            <a label="Some Label" href="#" class="vf-section-header__heading vf-section-header__heading--is-link">
+              Some Heading
+              <svg aria-hidden="true" class="vf-section-header__icon | vf-icon vf-icon-arrow--inline-end" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z" fill="" fill-rule="nonzero"></path>
+              </svg>
+            </a>
+          </div>
+          <p class="vf-summary__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum iaculis est vel tempus. Sed condimentum dolor sit amet hendrerit rutrum.</p>
+          <p><a label="Some Heading" href="#" class="vf-link">000 records ></a></p>
+          <p>&nbsp;</p>
+        </article>
+        <article class="vf-summary vf-u-padding__right--xl">
+          <div class="vf-section-header">
+            <a label="Some Label" href="#" class="vf-section-header__heading vf-section-header__heading--is-link">
+              Some Heading
+              <svg aria-hidden="true" class="vf-section-header__icon | vf-icon vf-icon-arrow--inline-end" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z" fill="" fill-rule="nonzero"></path>
+              </svg>
+            </a>
+          </div>
+          <p class="vf-summary__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum iaculis est vel tempus. Sed condimentum dolor sit amet hendrerit rutrum.</p>
+          <p><a label="Some Heading" href="#" class="vf-link">000 records ></a></p>
+          <p>&nbsp;</p>
+        </article>
+        <article class="vf-summary vf-u-padding__right--xl">
+          <div class="vf-section-header">
+            <a label="Some Label" href="#" class="vf-section-header__heading vf-section-header__heading--is-link">
+              Some Heading
+              <svg aria-hidden="true" class="vf-section-header__icon | vf-icon vf-icon-arrow--inline-end" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z" fill="" fill-rule="nonzero"></path>
+              </svg>
+            </a>
+          </div>
+          <p class="vf-summary__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum iaculis est vel tempus. Sed condimentum dolor sit amet hendrerit rutrum.</p>
+          <p><a label="Some Heading" href="#" class="vf-link">000 records ></a></p>
+          <p>&nbsp;</p>
+        </article>
       </div>
     </div>
     <!-- Publications -->
     <div class="vf-container__content vf-content vf-grid__col--span-1">
-
       <h2 class="vf-links__heading">About this portal</h2>
       <article class="vf-summary vf-summary--publication">
         <p class="vf-box__text vf-text-body--2">
-          The COVID-19 Data Portal was launched in April 2020 to bring together relevant datasets for sharing and analysis in an effort to accelerate coronavirus research. It enables researchers to upload, access and analyse COVID-19 related reference data and specialist datasets as part of the wider European COVID-19 Data Platform.
-        </p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum iaculis est vel tempus. Sed condimentum dolor sit amet hendrerit rutrum. Quisque faucibus gravida massa non convallis.
+          Etiam rhoncus neque eget mollis ultrices. Curabitur auctor lectus et pretium fringilla. Phasellus dignissim enim et leo cursus fringilla.</p>
       </article>
-
-
       <section id="participate-container" class="vf-card-container">
         <div class="vf-card-container__inner">
           <article class="vf-card vf-card-normal">
-
             <a class="vf-card__link" label="Help use make the portal better" href="https://docs.google.com/forms/d/e/1FAIpQLScXWbNacMxM2Ozk9dWNPECXlOZUm8Rrm8DU37kanNWXAQ1NAw/viewform">
               <img src="/assets/img/participate-image.png" alt="" class="vf-card__image" loading="lazy">
             </a>
             <div class="vf-card__content">
-
               <h3 class="vf-card__title">
                 <a class="vf-card__link" label="Help make the portal better" href="https://docs.google.com/forms/d/e/1FAIpQLScXWbNacMxM2Ozk9dWNPECXlOZUm8Rrm8DU37kanNWXAQ1NAw/viewform">Help make the portal better</a>
               </h3>
-
               <p class="vf-card__text">Are you a researcher working with COVID-19 data? We would like to hear your feedback on this portal and the presentation of the data you are interested in.</p>
-
               <a label="Sign up to participate" href="https://docs.google.com/forms/d/e/1FAIpQLScXWbNacMxM2Ozk9dWNPECXlOZUm8Rrm8DU37kanNWXAQ1NAw/viewform"
                  class="">
                 Sign up to participate >
               </a>
             </div>
-
           </article>
         </div>
       </section>
-
       <div class="vf-component__container">
         <a label="Share new COVID-19 data" [routerLink]="['/submit-data']" class="vf-box vf-box--is-link vf-box--normal vf-u-background-color--red--dark">
           <h3 class="vf-box__heading">Share new COVID-19 data  ></h3>
           <p class="vf-box__text vf-text-body--2">Contact our curator teams, who will assist you with submitting your data to EMBL-EBI repositories ></p>
         </a>
       </div>
-
       <!--
-                <div class="vf-component__container vf-box vf-box-theme--quinary">
-                  <a label="Help use make the portal better" href="https://docs.google.com/forms/d/e/1FAIpQLScXWbNacMxM2Ozk9dWNPECXlOZUm8Rrm8DU37kanNWXAQ1NAw/viewform"
-                    class="">
-                    <h3 class="vf-box__heading">Help use make the portal better  ></h3>
-                  </a>
-                  <p class="vf-box__text">Are you a researcher working with COVID-19 data? We would like to hear your feedback on this portal and the presentation of the data you are interested in.</p>
-                  <a label="Sign up to participate" href="https://docs.google.com/forms/d/e/1FAIpQLScXWbNacMxM2Ozk9dWNPECXlOZUm8Rrm8DU37kanNWXAQ1NAw/viewform"
-                    class="">
-                    Sign up to participate >
-                  </a>
-                </div>
-      -->
-
+         <div class="vf-component__container vf-box vf-box-theme--quinary">
+           <a label="Help use make the portal better" href="https://docs.google.com/forms/d/e/1FAIpQLScXWbNacMxM2Ozk9dWNPECXlOZUm8Rrm8DU37kanNWXAQ1NAw/viewform"
+             class="">
+             <h3 class="vf-box__heading">Help use make the portal better  ></h3>
+           </a>
+           <p class="vf-box__text">Are you a researcher working with COVID-19 data? We would like to hear your feedback on this portal and the presentation of the data you are interested in.</p>
+           <a label="Sign up to participate" href="https://docs.google.com/forms/d/e/1FAIpQLScXWbNacMxM2Ozk9dWNPECXlOZUm8Rrm8DU37kanNWXAQ1NAw/viewform"
+             class="">
+             Sign up to participate >
+           </a>
+         </div>
+         -->
       <!-- <div class="vf-u-margin__top--xxl">&nbsp;</div>
-      <h3 class="vf-links__heading">Latest COVID-19 publications</h3>
-      <article class="vf-summary vf-summary--publication">
-        <h3 class="vf-text vf-text-heading--5">
-          <a href="JavaScript:Void(0);" class="vf-summary__link">
-              Evaluation of two commercial multiplex PCR tests for the diagnosis of acute respiratory infections in hospitalized children.
-          </a>
-        </h3>
+         <h3 class="vf-links__heading">Latest COVID-19 publications</h3>
+         <article class="vf-summary vf-summary--publication">
+           <h3 class="vf-text vf-text-heading--5">
+             <a href="JavaScript:Void(0);" class="vf-summary__link">
+                 Evaluation of two commercial multiplex PCR tests for the diagnosis of acute respiratory infections in hospitalized children.
+             </a>
+           </h3>
 
-        <p class="vf-summary__source">
-          The Journal of cell biology
-          <span class="vf-summary__date">2019</span>
-        </p>
+           <p class="vf-summary__source">
+             The Journal of cell biology
+             <span class="vf-summary__date">2019</span>
+           </p>
 
-        <p class="vf-summary__text">
-            10.21203/rs.3.rs-20478/v1
-          <a class="vf-link" href="JavaScript:Void(0);">Research Square</a>
-        </p>
-      </article>
-      <article class="vf-summary vf-summary--publication">
-          <h3 class="vf-text vf-text-heading--5">
-            <a href="JavaScript:Void(0);" class="vf-summary__link">
-              Computer modeling in developmental biology: growing today, essential tomorrow.
-            </a>
-          </h3>
+           <p class="vf-summary__text">
+               10.21203/rs.3.rs-20478/v1
+             <a class="vf-link" href="JavaScript:Void(0);">Research Square</a>
+           </p>
+         </article>
+         <article class="vf-summary vf-summary--publication">
+             <h3 class="vf-text vf-text-heading--5">
+               <a href="JavaScript:Void(0);" class="vf-summary__link">
+                 Computer modeling in developmental biology: growing today, essential tomorrow.
+               </a>
+             </h3>
 
-          <p class="vf-summary__source">
-              Research Square
-            <span class="vf-summary__date">2019</span>
-          </p>
+             <p class="vf-summary__source">
+                 Research Square
+               <span class="vf-summary__date">2019</span>
+             </p>
 
-          <p class="vf-summary__text">
-            doi: 10.1242/dev.151274.
-            <a class="vf-link" href="JavaScript:Void(0);">Europe</a>
-            <a class="vf-link" href="JavaScript:Void(0);">PMC</a>
-          </p>
-        </article> -->
+             <p class="vf-summary__text">
+               doi: 10.1242/dev.151274.
+               <a class="vf-link" href="JavaScript:Void(0);">Europe</a>
+               <a class="vf-link" href="JavaScript:Void(0);">PMC</a>
+             </p>
+           </article> -->
     </div>
   </div>
 </div>
-
-
 <!-- end main content -->
-
-
-
-
-
-
-
-
-
-
 <footer data-vf-google-analytics-region="footer-area">
   <div class="vf-footer__inner vf-u-margin__top--xxl">
     <p class="">To enquire on how to collaborate on the European COVID-19 platform: <span class="vf-link"><a class="vf-link" target="_blank" href="mailto:ecovid19@ebi.ac.uk">ecovid19@ebi.ac.uk</a></span>.</p>
@@ -406,7 +297,6 @@
       <div class="vf-links">
         <div class="vf-links__heading">&nbsp;</div>
         <ul class="vf-links__list | vf-list">
-
           <li class="vf-list__item">
             <a routerLinkActive #rla1="routerLinkActive"
                [class.top-nav-active]="rla1.isActive" label="Biochemistry" [routerLink]="['/biochemistry']"
@@ -461,13 +351,12 @@
         <a href="https://www.ebi.ac.uk/" target="_blank"
            class="vf-summary__link">
           <div class="vf-u-padding__top--md">
-                <span><img height="60" src="/assets/img/EMBL_EBI_Logo_black.svg"
-                           alt="EMBL - European Bioinformatics Institute"></span>
+                        <span><img height="60" src="/assets/img/EMBL_EBI_Logo_black.svg"
+                                   alt="EMBL - European Bioinformatics Institute"></span>
           </div>
         </a>
       </div>
     </div>
-
     <div class="vf-footer__links-group | vf-grid" style="border-width: 0px">
       <div class="vf-links">
         <!-- <h4 class="vf-links__heading"></h4> -->
@@ -509,28 +398,15 @@
           <img width="70" src="/assets/img/eosclogo.png" alt="European Open Science Cloud HUB">
         </a>
       </div>
-
     </div>
-
     <section class="vf-footer__legal | vf-grid vf-grid__col-1">
-      <!-- <ul class="vf-footer__list vf-footer__list--legal | vf-list vf-list--inline">
-        <li class="vf-list__item">
-          <a href="JavaScript:Void(0);" class="vf-list__link">Entry</a>
-        </li>
-        <li class="vf-list__item">
-          <a href="JavaScript:Void(0);" class="vf-list__link">Entry</a>
-        </li>
-        <li class="vf-list__item">
-          <a href="JavaScript:Void(0);" class="vf-list__link">Entry</a>
-        </li>
-      </ul> -->
-      <p class="vf-footer__legal-text">Copyright © COVID-19 Data Portal</p>
+      <p class="vf-footer__legal-text">Copyright © COVID-19 Portal</p>
       <!-- <p class="vf-footer__legal-text">Maybe an address too, 5555, Somewhere, Earth.</p> -->
       <!-- <p class="vf-footer__legal-text">Tel: +49 00 000 000.</p> -->
       <!-- <a class="vf-footer__link" href="JavaScript:Void(0);">Another entry</a> -->
     </section>
   </div>
 </footer>
-
+<script src="/vf-covid19-boilerplate/scripts/scripts.js"></script>
 </body>
 </html>
