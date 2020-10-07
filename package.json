@@ -58,5 +58,8 @@
     "VF",
     "Visual Framework",
     "Covid19"
-  ]
+  ],
+  "devDependencies": {
+    "gulp-file-include": "^2.2.2"
+  }
 }

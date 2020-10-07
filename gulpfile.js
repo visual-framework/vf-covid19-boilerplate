@@ -23,6 +23,7 @@ var   fractalBuildMode;
 // todo: this could/should become a JS module
 const fs = require('fs');
 const path = require('path');
+const fileinclude = require('gulp-file-include');
 const config = JSON.parse(fs.readFileSync('./package.json'));
 const vfCoreConfig = JSON.parse(fs.readFileSync(require.resolve('@visual-framework/vf-core/package.json')));
 config.vfConfig = config.vfConfig || [];
@@ -46,7 +47,7 @@ require('./node_modules/\@visual-framework/vf-core/gulp-tasks/_gulp_rollup.js')(
 gulp.task('watch', function() {
   gulp.watch(['./src/components/**/*.scss', '!./src/components/**/package.variables.scss'], gulp.parallel('vf-css'));
   gulp.watch(['./src/components/**/*.js'], gulp.parallel('vf-scripts'));
-  gulp.watch(['./src/pages/**/*'], gulp.series('pages'));
+  gulp.watch(['./src/pages/**/*'], gulp.series('pages', 'fileinclude'));
   gulp.watch(['./build/**/*'], gulp.series('browser-reload'));
 });
 
@@ -61,6 +62,17 @@ gulp.task('set-to-static-build', function(done) {
   fractalBuildMode = 'dataobject'; // run fractal in server mode as there's no need for static html assets
   done();
 });
+
+gulp.task('fileinclude', function(done) {
+  gulp.src('./src/pages/**/*')
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest(buildDestionation));
+  done();
+});
+
 
 // Run build-assets, but only after we wait for fractal to bootstrap
 // @todo: consider if this could/should be two parallel gulp tasks
@@ -106,6 +118,7 @@ gulp.task('build', gulp.series(
   'vf-clean',
   gulp.parallel('pages','vf-css','vf-scripts','vf-component-assets'),
   'set-to-static-build',
+  'fileinclude',
   'build-assets'
 ));
 
@@ -114,6 +127,7 @@ gulp.task('dev', gulp.series(
   'vf-clean',
   gulp.parallel('pages','vf-css','vf-scripts','vf-component-assets'),
   'set-to-development',
+  'fileinclude',
   'build-assets',
   'browser-sync',
   gulp.parallel('watch','vf-watch')
