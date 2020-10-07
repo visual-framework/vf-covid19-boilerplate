@@ -4891,7 +4891,7 @@ gulp-delete-lines@^0.0.7:
     event-stream "~3.1.0"
     gulp-util ">=2.2.0"
 
-gulp-file-include@^2.2.2:
+gulp-file-include@2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/gulp-file-include/-/gulp-file-include-2.2.2.tgz#5aa63373f7d7840651471aec8dae3c1827ac7550"
   integrity sha512-AOrENB4sYXOC1aeJ04pq0UW/VC4EEQHDDjVfTpGGxuKS7Js0SSGZ0darlbk+e7gWJItfxibpRhVu3tFwOdmSiA==
@@ -4905,7 +4905,7 @@ gulp-file-include@^2.2.2:
     through2 "^3.0.1"
     vinyl "^2.2.0"
 
-gulp-gh-pages@^0.5.4:
+gulp-gh-pages@0.5.4:
   version "0.5.4"
   resolved "https://registry.yarnpkg.com/gulp-gh-pages/-/gulp-gh-pages-0.5.4.tgz#a6732ca475ab9b5a53253c1c24734c40c21b6546"
   integrity sha1-pnMspHWrm1pTJTwcJHNMQMIbZUY=
