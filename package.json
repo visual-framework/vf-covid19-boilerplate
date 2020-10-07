@@ -75,9 +75,9 @@
     "Covid19"
   ],
   "devDependencies": {
-    "@visual-framework/vf-badge": "^1.1.0",
-    "@visual-framework/vf-button": "^1.0.4",
-    "@visual-framework/vf-hero": "^1.4.5",
-    "@visual-framework/vf-link-list": "^1.1.1"
+    "@visual-framework/vf-badge": "1.2.1",
+    "@visual-framework/vf-button": "1.1.2",
+    "@visual-framework/vf-hero": "1.6.0",
+    "@visual-framework/vf-link-list": "1.1.1"
   }
 }
