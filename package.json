@@ -1,0 +1,83 @@
+{
+  "name": "@visual-framework/vf-covid19-boilerplate",
+  "version": "1.0.0-alpha.1",
+  "description": "A mininimal implementation to build VF components into static CSS and JS to build Covid19 portals.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/visual-framework/vf-covid19-boilerplate.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Ken Hawkins <ken.hawkins@embl.de> (https://www.embl.de/aboutus/communication_outreach/)",
+  "main": "gulpfile.js",
+  "vfConfig": {
+    "vfName": "VF Covid19 Boilerplate",
+    "vfNamespace": "vfbuild-",
+    "vfComponentPath": "./src/components",
+    "vfBuildDestination": "./build/vf-covid19-boilerplate",
+    "vfThemePath": "@frctl/mandelbrot",
+    "vfDeployDirectory": "vf-covid19-boilerplate"
+  },
+  "scripts": {
+    "build": "gulp build && echo \"🏋 Build completed\" && exit 0",
+    "dev": "gulp dev",
+    "start": "npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "update-components": "yarn upgrade-interactive --latest"
+  },
+  "dependencies": {
+    "@node-sass/node-module-importer": "^1.2.3",
+    "@visual-framework/embl-grid": "^1.0.4",
+    "@visual-framework/vf-analytics-google": "^1.0.0-rc.4",
+    "@visual-framework/vf-banner": "1.3.0",
+    "@visual-framework/vf-box": "^1.0.4",
+    "@visual-framework/vf-card": "^2.0.0",
+    "@visual-framework/vf-card-container": "^2.0.1-3.0.0-alpha.1.0",
+    "@visual-framework/vf-banner": "1.3.0",
+    "@visual-framework/vf-code-example": "^1.0.1",
+    "@visual-framework/vf-content": "^1.1.7",
+    "@visual-framework/vf-core": "^2.2.0-alpha.3",
+    "@visual-framework/vf-design-tokens": "^1.0.7",
+    "@visual-framework/vf-divider": "^1.0.0",
+    "@visual-framework/vf-favicon": "1.0.2",
+    "@visual-framework/vf-font-plex-mono": "^1.1.0",
+    "@visual-framework/vf-font-plex-sans": "^1.1.0",
+    "@visual-framework/vf-form__core": "^1.0.3",
+    "@visual-framework/vf-global-header": "^2.0.1",
+    "@visual-framework/vf-grid": "^1.0.5",
+    "@visual-framework/vf-grid-page": "^2.0.0",
+    "@visual-framework/vf-heading": "^1.0.0",
+    "@visual-framework/vf-intro": "^1.3.0",
+    "@visual-framework/vf-lede": "^1.0.1",
+    "@visual-framework/vf-logo": "^1.1.0",
+    "@visual-framework/vf-navigation": "^1.2.3",
+    "@visual-framework/vf-no-js": "1.0.0",
+    "@visual-framework/vf-sass-config": "^1.1.3",
+    "@visual-framework/vf-sass-utilities": "^1.0.1",
+    "@visual-framework/vf-section-header": "^1.2.1",
+    "@visual-framework/vf-summary": "^1.0.6",
+    "@visual-framework/vf-summary-container": "^1.0.0",
+    "@visual-framework/vf-table": "^1.0.1-1.1.1.0",
+    "@visual-framework/vf-tabs": "^1.1.1",
+    "@visual-framework/vf-text": "^1.0.2",
+    "@visual-framework/vf-utility-classes": "^1.0.3",
+    "gulp-image-resize": "^0.13.1",
+    "html-minifier": "^4.0.0",
+    "list-stream": "^2.0.0",
+    "require-dir": "^1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/visual-framework/vf-covid19-boilerplate/issues"
+  },
+  "homepage": "https://github.com/visual-framework/vf-covid19-boilerplate#readme",
+  "keywords": [
+    "VF",
+    "Visual Framework",
+    "Covid19"
+  ],
+  "devDependencies": {
+    "@visual-framework/vf-badge": "^1.1.0",
+    "@visual-framework/vf-button": "^1.0.4",
+    "@visual-framework/vf-hero": "^1.4.5",
+    "@visual-framework/vf-link-list": "^1.1.1"
+  }
+}
