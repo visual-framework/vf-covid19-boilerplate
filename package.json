@@ -16,7 +16,7 @@
     "vfComponentPath": "./src/components",
     "vfBuildDestination": "./build",
     "vfThemePath": "@frctl/mandelbrot",
-    "vfDeployDirectory": "build"
+    "vfDeployDirectory": "vf-covid19-boilerplate"
   },
   "scripts": {
     "build": "gulp build && echo \"🏋 Build completed\" && exit 0",

@@ -37,7 +37,7 @@ const componentDirectories = config.vfConfig.vfComponentDirectories || ['vf-core
 const buildDestionation = path.resolve('.', global.vfBuildDestination).replace(/\\/g, '/');
 
 // The directory the site will be deployed to (if any)
-const deployDirectory = config.vfConfig.vfDeployDirectory || "build";
+const deployDirectory = config.vfConfig.vfDeployDirectory || "vf-covid19-boilerplate";
 
 // Tasks to build/run vf-core component system
 require('./node_modules/\@visual-framework/vf-core/gulp-tasks/_gulp_rollup.js')(gulp, path, componentPath, componentDirectories, buildDestionation);
@@ -47,7 +47,7 @@ gulp.task('watch', function() {
   gulp.watch(['./src/components/**/*.scss', '!./src/components/**/package.variables.scss'], gulp.parallel('vf-css'));
   gulp.watch(['./src/components/**/*.js'], gulp.parallel('vf-scripts'));
   //gulp.watch(['./src/pages/**/*'], gulp.series('pages','fileinclude'));
- gulp.watch(['./src/pages/**/*'], gulp.series('fileinclude', 'pages'));
+ gulp.watch(['./src/pages/**/*'], gulp.series('pages', 'fileinclude'));
  gulp.watch(['./src/pages/images/*.{svg,png,jpg,gif}'], gulp.series('build-copy'));
   gulp.watch(['./build/**/*'], gulp.series('browser-reload'));
 });
@@ -123,8 +123,9 @@ gulp.task('browser-reload', function(done) {
 // Let's build this sucker.
 gulp.task('build', gulp.series(
   'vf-clean',
-  'fileinclude',
+
   gulp.parallel('pages','vf-css','vf-scripts','vf-component-assets'),
+  'fileinclude',
   'set-to-static-build',
   'build-assets',
   'build-copy'
@@ -135,8 +136,9 @@ gulp.task('build', gulp.series(
 // Build and watch things during dev
 gulp.task('dev', gulp.series(
   'vf-clean',
-  'fileinclude',
+
   gulp.parallel('pages','vf-css','vf-scripts','vf-component-assets'),
+  'fileinclude',
   'set-to-development',
 
   'build-assets',
