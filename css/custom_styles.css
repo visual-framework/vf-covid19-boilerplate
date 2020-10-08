@@ -21,7 +21,7 @@
     overflow: hidden;
     background: #c3ddee;
     /* background: linear-gradient(90deg, rgba(210,234,206,1) 0%, rgba(233,233,233,1) 35%); */
-    background-image: url(/vf-covid19-boilerplate/images/CV19DP_banner.jpg);
+    background-image: url(../images/CV19DP_banner.jpg);
     background-repeat: no-repeat;
     background-position-y: bottom;
 
@@ -37,7 +37,7 @@
 .hero-thin {
     overflow: hidden;
     background: #c3ddee;
-    background-image: url(/vf-covid19-boilerplate/images/CV19DP_banner.jpg);
+    background-image: url(../images/CV19DP_banner.jpg);
     background-repeat: no-repeat;
 }
 /*** End For Homepage hero **/
