@@ -14,7 +14,7 @@
     "vfName": "VF Covid19 Boilerplate",
     "vfNamespace": "vfbuild-",
     "vfComponentPath": "./src/components",
-    "vfBuildDestination": "./build",
+    "vfBuildDestination": "./build/vf-covid19-boilerplate",
     "vfThemePath": "@frctl/mandelbrot",
     "vfDeployDirectory": "vf-covid19-boilerplate"
   },
@@ -24,7 +24,7 @@
     "start": "npm run dev",
     "test": "echo \"Error: no test specified\" && exit 0",
     "update-components": "yarn upgrade-interactive --latest",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build/vf-covid19-boilerplate"
   },
   "dependencies": {
     "@visual-framework/embl-grid": "^2.0.4",
