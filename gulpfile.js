@@ -1,7 +1,6 @@
 const gulp  = require('gulp');
 const browserSync = require('browser-sync').create();
 var   fractalBuildMode;
-const deploy      = require('gulp-gh-pages');
 // -----------------------------------------------------------------------------
 // Configuration
 // -----------------------------------------------------------------------------
@@ -38,7 +37,7 @@ const componentDirectories = config.vfConfig.vfComponentDirectories || ['vf-core
 const buildDestionation = path.resolve('.', global.vfBuildDestination).replace(/\\/g, '/');
 
 // The directory the site will be deployed to (if any)
-const deployDirectory = config.vfConfig.vfDeployDirectory || "vf-covid19-boilerplate";
+const deployDirectory = config.vfConfig.vfDeployDirectory || "build";
 
 // Tasks to build/run vf-core component system
 require('./node_modules/\@visual-framework/vf-core/gulp-tasks/_gulp_rollup.js')(gulp, path, componentPath, componentDirectories, buildDestionation);
@@ -47,7 +46,9 @@ require('./node_modules/\@visual-framework/vf-core/gulp-tasks/_gulp_rollup.js')(
 gulp.task('watch', function() {
   gulp.watch(['./src/components/**/*.scss', '!./src/components/**/package.variables.scss'], gulp.parallel('vf-css'));
   gulp.watch(['./src/components/**/*.js'], gulp.parallel('vf-scripts'));
-  gulp.watch(['./src/pages/**/*'], gulp.series('pages', 'fileinclude'));
+  //gulp.watch(['./src/pages/**/*'], gulp.series('pages','fileinclude'));
+ gulp.watch(['./src/pages/**/*'], gulp.series('fileinclude', 'pages'));
+ gulp.watch(['./src/pages/images/*.{svg,png,jpg,gif}'], gulp.series('build-copy'));
   gulp.watch(['./build/**/*'], gulp.series('browser-reload'));
 });
 
@@ -73,6 +74,12 @@ gulp.task('fileinclude', function(done) {
   done();
 });
 
+// Fix to avoid corrupt images
+gulp.task('build-copy', function(done){
+  return gulp.src(['./src/pages/images/*.{svg,png,jpg,gif}'])
+    .pipe(gulp.dest(buildDestionation + '/images'));
+  done();
+});
 
 // Run build-assets, but only after we wait for fractal to bootstrap
 // @todo: consider if this could/should be two parallel gulp tasks
@@ -101,7 +108,7 @@ gulp.task('browser-sync', function(done) {
   browserSync.init({
     server: {
           baseDir: './build',
-          index: deployDirectory+'/index.html'
+          index: buildDestionation+'/index.html'
         }
   });
   done();
@@ -116,27 +123,25 @@ gulp.task('browser-reload', function(done) {
 // Let's build this sucker.
 gulp.task('build', gulp.series(
   'vf-clean',
+  'fileinclude',
   gulp.parallel('pages','vf-css','vf-scripts','vf-component-assets'),
   'set-to-static-build',
-  'fileinclude',
-  'build-assets'
+  'build-assets',
+  'build-copy'
+
+
 ));
 
 // Build and watch things during dev
 gulp.task('dev', gulp.series(
   'vf-clean',
+  'fileinclude',
   gulp.parallel('pages','vf-css','vf-scripts','vf-component-assets'),
   'set-to-development',
-  'fileinclude',
+
   'build-assets',
+  'build-copy',
   'browser-sync',
   gulp.parallel('watch','vf-watch')
 ));
 
-/**
- * Push build to gh-pages
- */
-gulp.task('deploy', function () {
-  return gulp.src("./build/**/*")
-    .pipe(deploy())
-});

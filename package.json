@@ -2,6 +2,7 @@
   "name": "@visual-framework/vf-covid19-boilerplate",
   "version": "1.0.0-alpha.1",
   "description": "A mininimal implementation to build VF components into static CSS and JS to build Covid19 portals.",
+  "homepage": "https://visual-framework.github.io/vf-covid19-boilerplate/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/visual-framework/vf-covid19-boilerplate.git"
@@ -13,16 +14,17 @@
     "vfName": "VF Covid19 Boilerplate",
     "vfNamespace": "vfbuild-",
     "vfComponentPath": "./src/components",
-    "vfBuildDestination": "./build/vf-covid19-boilerplate",
+    "vfBuildDestination": "./build",
     "vfThemePath": "@frctl/mandelbrot",
-    "vfDeployDirectory": "vf-covid19-boilerplate"
+    "vfDeployDirectory": "build"
   },
   "scripts": {
     "build": "gulp build && echo \"🏋 Build completed\" && exit 0",
     "dev": "gulp dev",
     "start": "npm run dev",
     "test": "echo \"Error: no test specified\" && exit 0",
-    "update-components": "yarn upgrade-interactive --latest"
+    "update-components": "yarn upgrade-interactive --latest",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@visual-framework/embl-grid": "^2.0.4",
@@ -60,7 +62,7 @@
     "Covid19"
   ],
   "devDependencies": {
-    "gulp-file-include": "2.2.2",
-    "gulp-gh-pages": "0.5.4"
+    "gh-pages": "^3.1.0",
+    "gulp-file-include": "2.2.2"
   }
 }

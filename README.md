@@ -32,8 +32,10 @@ Otherwise configure gulp like any other project.
 1. Install all the things
    - `yarn install`
 1. Generate the site in `/build`
-   - `gulp dev` renders and serves
    - `gulp build` build static assets
+   - `gulp dev` renders and serves
+1. Deploy in Github Pages `/build` folder
+   - `yarn deploy` build folder will get deployed to gh-pages branch
 
 ### Adding Visual Framework components
 
