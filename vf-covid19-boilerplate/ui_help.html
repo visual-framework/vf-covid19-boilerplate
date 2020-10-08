@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>COVID-19 Data Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="all" href="/vf-covid19-boilerplate/css/styles.css" />
+  <link rel="stylesheet" media="all" href="/vf-covid19-boilerplate/css/custom_styles.css" />
+</head>
+<body class="vf-body">
+<div class="vf-body" id="topAnchor">
+  <header class="vf-header">
+    <div class="vf-global-header">
+      <div class="vf-global-header__inner">
+        <a label="CV19-PORTAL" class="vf-logo__image" href="/">
+          <img class="vf-logo__image" src="/vf-covid19-boilerplate/images/CV19DP_logo_oneliner2.svg" alt="CV19-PORTAL">
+          <!--          <span class="vf-logo__text">Covid 19 Portal</span>-->
+        </a>
+        <nav class="vf-navigation vf-navigation--global vf-u-margin__top--xxl">
+          <ul class="vf-navigation__list | vf-list--inline">
+            <li class="vf-navigation__item">
+              <a href="/vf-covid19-boilerplate/about.html" label="About" class="vf-navigation__link"> About Page</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a href="/vf-covid19-boilerplate/ui_help.html" label="Link 1" class="vf-navigation__link"> UI Components</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a href="#" label="Link 2" class="vf-navigation__link"> Link 2</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a href="#" class="vf-navigation__link" label="Link 3"> Link 3</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a href="#"  label="Link 4" class="vf-navigation__link"> Link 4 </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+</div>
+
+
+<div class="cv19-app-nav-container">
+  <div class="vf-body">
+    <section class="vf-grid cv19-app-nav vf-u-padding__top--sm vf-u-padding__bottom--sm">
+      <div class="vf-component__container">
+        <nav  class="vf-navigation vf-navigation--main">
+          <ul class="vf-navigation__list | vf-list--inline">
+            <li class="vf-navigation__item">
+              <a label="Sub Nav 1" title="Sub Nav 1" href="#" class="vf-navigation__link">Sub-Nav 1</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a label="Sub Nav 2" title="Sub Nav 2" href="#" class="vf-navigation__link">Sub-Nav 2</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a label="Sub Nav 3" title="Sub Nav 2" href="#" class="vf-navigation__link">Sub-Nav 3</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a label="Sub Nav 4" title="Sub Nav 3" href="#" class="vf-navigation__link">Sub-Nav 4</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a label="Sub Nav 5" title="Sub Nav 4" href="#" class="vf-navigation__link">Sub-Nav 5</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+<section class="vf-content">
+  <p> Here are some code examples of Visual Framework components</p>
+  <h4>Banner Component</h4>
+  <div class="vf-banner vf-banner--phase">
+    <div class="vf-banner__content">
+      <p class="vf-banner__text">
+        This is a new web page.
+        <a href="NaN" class="vf-link">
+          Complete our quick survey
+        </a>
+        to help us make it better.
+      </p>
+    </div>
+  </div>
+
+  <h4> Table data with checkbox & buttons</h4>
+
+  <svg class="vf-icon-sprite vf-icon-sprite--tables" display="none">
+    <defs>
+      <g id="vf-table-sortable--up">
+        <path xmlns="http://www.w3.org/2000/svg" d="M17.485,5.062,12.707.284a1.031,1.031,0,0,0-1.415,0L6.515,5.062a1,1,0,0,0,.707,1.707H10.25a.25.25,0,0,1,.25.25V22.492a1.5,1.5,0,1,0,3,0V7.019a.249.249,0,0,1,.25-.25h3.028a1,1,0,0,0,.707-1.707Z" />
+      </g>
+      <g id="vf-table-sortable--down">
+        <path xmlns="http://www.w3.org/2000/svg" d="M17.7,17.838a1,1,0,0,0-.924-.617H13.75a.249.249,0,0,1-.25-.25V1.5a1.5,1.5,0,0,0-3,0V16.971a.25.25,0,0,1-.25.25H7.222a1,1,0,0,0-.707,1.707l4.777,4.778a1,1,0,0,0,1.415,0l4.778-4.778A1,1,0,0,0,17.7,17.838Z" />
+      </g>
+      <g id="vf-table-sortable">
+        <path xmlns="http://www.w3.org/2000/svg" d="M9,19a1,1,0,0,0-.707,1.707l3,3a1,1,0,0,0,1.414,0l3-3A1,1,0,0,0,15,19H13.5a.25.25,0,0,1-.25-.25V5.249A.25.25,0,0,1,13.5,5H15a1,1,0,0,0,.707-1.707l-3-3a1,1,0,0,0-1.414,0l-3,3A1,1,0,0,0,9,5h1.5a.25.25,0,0,1,.25.25v13.5a.25.25,0,0,1-.25.25Z" />
+      </g>
+    </defs>
+  </svg>
+  <table class="vf-table">
+    <thead class="vf-table__header">
+    <tr class="vf-table__row">
+      <th class="vf-table__heading" scope="col">
+        <input type="checkbox" id="select-all" class="vf-form__checkbox | vf-table__checkbox">
+        <label for="select-all" class="vf-form__label vf-table__label">
+               <span class="vf-u-sr-only">
+               Select all rows
+               </span>
+        </label>
+      </th>
+      <th class="vf-table__heading" scope="col">
+        Event
+      </th>
+      <th class="vf-table__heading" scope="col">
+        Date
+      </th>
+      <th class="vf-table__heading" scope="col">
+        Type
+      </th>
+      <th class="vf-table__heading" scope="col">
+        Location
+      </th>
+    </tr>
+    </thead>
+    <tbody class="vf-table__body">
+    <tr class="vf-table__row
+            vf-table__row--selected">
+      <th class="vf-table__cell vf-table__cell--selectable" scope="row">
+        <input type="checkbox" id="checkbox-1" class="vf-form__checkbox | vf-table__checkbox" checked>
+        <label for="checkbox-1" class="vf-form__label vf-table__label">
+               <span class="vf-u-sr-only">
+               Form Label
+               </span>
+        </label>
+      </th>
+      <td class="vf-table__cell">
+        dave
+      </td>
+      <td class="vf-table__cell">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusamus a nostrum odit aliquid repudiandae architecto molestiae, dolores.
+      </td>
+      <td class="vf-table__cell">
+        roger
+      </td>
+      <td class="vf-table__cell">
+        London, U.K.
+      </td>
+    </tr>
+    <tr class="vf-table__row
+            ">
+      <th class="vf-table__cell vf-table__cell--selectable" scope="row">
+        <input type="checkbox" id="checkbox-2" class="vf-form__checkbox | vf-table__checkbox">
+        <label for="checkbox-2" class="vf-form__label vf-table__label">
+               <span class="vf-u-sr-only">
+               Form Label
+               </span>
+        </label>
+      </th>
+      <td class="vf-table__cell">
+        dave
+      </td>
+      <td class="vf-table__cell">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fugit illo officia dignissimos amet.
+      </td>
+      <td class="vf-table__cell">
+        roger
+      </td>
+      <td class="vf-table__cell">
+        London, U.K.
+      </td>
+    </tr>
+    <tr class="vf-table__row
+            ">
+      <th class="vf-table__cell vf-table__cell--selectable" scope="row">
+        <input type="checkbox" id="checkbox-3" class="vf-form__checkbox | vf-table__checkbox">
+        <label for="checkbox-3" class="vf-form__label vf-table__label">
+               <span class="vf-u-sr-only">
+               Form Label
+               </span>
+        </label>
+      </th>
+      <td class="vf-table__cell">
+        dave
+      </td>
+      <td class="vf-table__cell">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </td>
+      <td class="vf-table__cell">
+        roger
+      </td>
+      <td class="vf-table__cell">
+        London, U.K.
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <div class="vf-table__actions">
+    <button class="vf-button vf-button--sm vf-button--icon">
+      edit
+    </button>
+    <button class="vf-button vf-button--sm vf-button--icon">
+      delete
+    </button>
+    <button class="vf-button vf-button--sm vf-button--icon">
+      download
+    </button>
+    <button class="vf-button vf-button--sm vf-button--icon">
+      cancel
+    </button>
+  </div>
+  dsds
+</section>
+
+
+<footer data-vf-google-analytics-region="footer-area">
+  <div class="vf-footer__inner vf-u-margin__top--xxl">
+    <p class="">Some dummy text goes here <span class="vf-link"><a class="vf-link" target="_blank" href="mailto:mail@somedomain.com">mail@somedomain.com</a></span>.</p>
+    <div class="vf-footer__links-group | vf-grid">
+      <div class="vf-links">
+        <h4 class="vf-links__heading">CATEGORY</h4>
+        <ul class="vf-links__list | vf-list">
+          <li class="vf-list__item">
+            <a label="some link" href="#" class="vf-list__link top-nav-active"> Some Link </a>
+          </li>
+          <li class="vf-list__item">
+            <a label="some link" href="#" class="vf-list__link top-nav-active"> Some Link </a>
+          </li>
+          <li class="vf-list__item">
+            <a label="some link" href="#" class="vf-list__link top-nav-active"> Some Link </a>
+          </li>
+          <li class="vf-list__item">
+            <a label="some link" href="#" class="vf-list__link top-nav-active"> Some Link </a>
+          </li>
+          <li class="vf-list__item">
+            <a label="some link" href="#" class="vf-list__link top-nav-active" target="_blank"> Some External Link </a>
+          </li>
+        </ul>
+      </div>
+      <div class="vf-links">
+        <h4 class="vf-links__heading">CATEGORY</h4>
+        <ul class="vf-links__list | vf-list">
+          <li class="vf-list__item">
+            <a label="some link" href="#" class="vf-list__link top-nav-active"> Some Link </a>
+          </li>
+          <li class="vf-list__item">
+            <a label="some link" href="#" class="vf-list__link top-nav-active"> Some Link </a>
+          </li>
+          <li class="vf-list__item">
+            <a label="some link" href="#" class="vf-list__link top-nav-active"> Some Link </a>
+          </li>
+          <li class="vf-list__item">
+            <a label="some link" href="#" class="vf-list__link top-nav-active"> Some Link </a>
+          </li>
+        </ul>
+      </div>
+      <div class="vf-links">
+        <h4 class="vf-links__heading">CATEGORY</h4>
+        <ul class="vf-links__list | vf-list">
+          <li class="vf-list__item">
+            <a label="some link" href="#" class="vf-list__link top-nav-active"> Some Link </a>
+          </li>
+          <li class="vf-list__item">
+            <a label="some link" href="#" class="vf-list__link top-nav-active"> Some Link </a>
+          </li>
+          <li class="vf-list__item">
+            <a label="some link" href="#" class="vf-list__link top-nav-active"> Some Link </a>
+          </li>
+          <li class="vf-list__item">
+            <a label="some link" href="#" class="vf-list__link top-nav-active"> Some Link </a>
+          </li>
+        </ul>
+      </div>
+      <div class="vf-links">
+        <!-- <a href="https://elixir-europe.org/services/covid-19-resources" target="_blank" class="vf-summary__link"> -->
+        <a href="https://elixir-europe.org/" target="_blank" class="vf-summary__link">
+          <div class="vf-u-padding__top--md">
+            <span><img height="100" src="/assets/img/elixir-logo2.png" alt="ELIXIR Europe"></span>
+          </div>
+        </a>
+      </div>
+      <div class="vf-links">
+        <a href="https://www.ebi.ac.uk/" target="_blank"
+           class="vf-summary__link">
+          <div class="vf-u-padding__top--md">
+                        <span><img height="60" src="/assets/img/EMBL_EBI_Logo_black.svg"
+                                   alt="EMBL - European Bioinformatics Institute"></span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="vf-footer__links-group | vf-grid" style="border-width: 0px">
+      <div class="vf-links">
+        <ul class="vf-links__list | vf-list vf-u-margin__top--sm">
+          <li class="vf-list__item">
+            <a class="vf-list__link" href="#"
+               target="_blank"> Support & Feedback </a>
+          </li>
+        </ul>
+      </div>
+      <div class="vf-links">
+        <!-- <h4 class="vf-links__heading"></h4> -->
+        <ul class="vf-links__list | vf-list vf-u-margin__top--sm">
+          <li class="vf-list__item">
+            <a class="vf-list__link" href="#"
+               target="_blank"> Privacy Notice </a>
+          </li>
+        </ul>
+      </div>
+      <div class="vf-links vf-u-margin__right--xxl">
+        <ul class="vf-links__list | vf-list">
+          <li class="vf-list__item">
+            &nbsp;
+        </ul>
+      </div>
+      <div class="vf-links">
+        <a href="https://ec.europa.eu/info/index_en" class="vf-u-margin__bottom--lg">
+          <img width="200" src="/assets/img/eu-logo--en.svg" alt="European Commission">
+        </a>
+      </div>
+      <div class="vf-links">
+        <a href="https://ec.europa.eu/programmes/horizon2020/" class="vf-u-margin__bottom--lg">
+          <img width="250" src="/assets/img/co-funded-h2020-horiz_en.png" alt="European Commission - Horizon 2020">
+        </a>
+      </div>
+      <div class="vf-links">
+        <a href="https://www.eosc-life.eu" class="vf-u-margin__bottom--lg">
+          <img width="70" src="/assets/img/eosclogo.png" alt="European Open Science Cloud HUB">
+        </a>
+      </div>
+    </div>
+    <section class="vf-footer__legal | vf-grid vf-grid__col-1">
+      <p class="vf-footer__legal-text">Copyright © COVID-19 Portal</p>
+      <!-- <p class="vf-footer__legal-text">Maybe an address too, 5555, Somewhere, Earth.</p> -->
+      <!-- <p class="vf-footer__legal-text">Tel: +49 00 000 000.</p> -->
+      <!-- <a class="vf-footer__link" href="JavaScript:Void(0);">Another entry</a> -->
+    </section>
+  </div>
+</footer>
+<script src="/vf-covid19-boilerplate/scripts/scripts.js"></script>
+</body>
+</html>
+
