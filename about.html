@@ -1,75 +1,5 @@
 
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>COVID-19 Data Portal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" media="all" href="/css/styles.css" />
-  <link rel="stylesheet" media="all" href="/css/custom_styles.css" />
-</head>
-<body class="vf-body">
-<div class="vf-body" id="topAnchor">
-  <header class="vf-header">
-    <div class="vf-global-header">
-      <div class="vf-global-header__inner">
-        <a label="CV19-PORTAL" class="vf-logo__image" href="/index.html">
-          <img class="vf-logo__image" src="/images/CV19DP_logo_oneliner2.svg" alt="CV19-PORTAL">
-          <!--          <span class="vf-logo__text">Covid 19 Portal</span>-->
-        </a>
-        <nav class="vf-navigation vf-navigation--global vf-u-margin__top--xxl">
-          <ul class="vf-navigation__list | vf-list--inline">
-            <li class="vf-navigation__item">
-              <a href="/about.html" label="About" class="vf-navigation__link"> About Page</a>
-            </li>
-            <li class="vf-navigation__item">
-              <a href="/ui_help.html" label="Link 1" class="vf-navigation__link"> UI Components</a>
-            </li>
-            <li class="vf-navigation__item">
-              <a href="#" label="Link 2" class="vf-navigation__link"> Link 2</a>
-            </li>
-            <li class="vf-navigation__item">
-              <a href="#" class="vf-navigation__link" label="Link 3"> Link 3</a>
-            </li>
-            <li class="vf-navigation__item">
-              <a href="#"  label="Link 4" class="vf-navigation__link"> Link 4 </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-</div>
-
-
-<div class="cv19-app-nav-container">
-  <div class="vf-body">
-    <section class="vf-grid cv19-app-nav vf-u-padding__top--sm vf-u-padding__bottom--sm">
-      <div class="vf-component__container">
-        <nav  class="vf-navigation vf-navigation--main">
-          <ul class="vf-navigation__list | vf-list--inline">
-            <li class="vf-navigation__item">
-              <a label="Sub Nav 1" title="Sub Nav 1" href="#" class="vf-navigation__link">Sub-Nav 1</a>
-            </li>
-            <li class="vf-navigation__item">
-              <a label="Sub Nav 2" title="Sub Nav 2" href="#" class="vf-navigation__link">Sub-Nav 2</a>
-            </li>
-            <li class="vf-navigation__item">
-              <a label="Sub Nav 3" title="Sub Nav 2" href="#" class="vf-navigation__link">Sub-Nav 3</a>
-            </li>
-            <li class="vf-navigation__item">
-              <a label="Sub Nav 4" title="Sub Nav 3" href="#" class="vf-navigation__link">Sub-Nav 4</a>
-            </li>
-            <li class="vf-navigation__item">
-              <a label="Sub Nav 5" title="Sub Nav 4" href="#" class="vf-navigation__link">Sub-Nav 5</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-  </div>
-</div>
-
+@@include('./header.html')
 
 <p> This is body of About us page</p>
 
@@ -121,6 +51,42 @@
     <div class="vf-section-header">
       <h2 class="vf-section-header__heading">Section C</h2>
     </div>
+
+    <div class="vf-section-content">
+      <article class="vf-summary">
+        <p class="vf-summary__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum iaculis est vel tempus. Sed condimentum dolor sit amet hendrerit rutrum. Quisque faucibus gravida massa non convallis.
+          Etiam rhoncus neque eget mollis ultrices. Curabitur auctor lectus et pretium fringilla. Phasellus dignissim enim et leo cursus fringilla.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum iaculis est vel tempus. Sed condimentum dolor sit amet hendrerit rutrum. Quisque faucibus gravida massa non convallis.
+          Etiam rhoncus neque eget mollis ultrices. Curabitur auctor lectus et pretium fringilla. Phasellus dignissim enim et leo cursus fringilla.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum iaculis est vel tempus. Sed condimentum dolor sit amet hendrerit rutrum. Quisque faucibus gravida massa non convallis.
+          Etiam rhoncus neque eget mollis ultrices. Curabitur auctor lectus et pretium fringilla. Phasellus dignissim enim et leo cursus fringilla</p>
+        <figure class="vf-figure">
+          <a href="#"><img src="{{section.img.url}}" title="some img title" alt="some img title"></a>
+        </figure>
+      </article>
+    </div>
+  </section>
+
+  <section class="vf-summary-container | embl-grid embl-grid--has-centered-content">
+    <div class="vf-section-header">
+      <h2 class="vf-section-header__heading">Section D</h2>
+    </div>
+
+    <div class="vf-section-content">
+      <article class="vf-summary">
+        <p class="vf-summary__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum iaculis est vel tempus. Sed condimentum dolor sit amet hendrerit rutrum. Quisque faucibus gravida massa non convallis.
+          Etiam rhoncus neque eget mollis ultrices. Curabitur auctor lectus et pretium fringilla. Phasellus dignissim enim et leo cursus fringilla.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum iaculis est vel tempus. Sed condimentum dolor sit amet hendrerit rutrum. Quisque faucibus gravida massa non convallis.
+          Etiam rhoncus neque eget mollis ultrices. Curabitur auctor lectus et pretium fringilla. Phasellus dignissim enim et leo cursus fringilla.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum iaculis est vel tempus. Sed condimentum dolor sit amet hendrerit rutrum. Quisque faucibus gravida massa non convallis.
+          Etiam rhoncus neque eget mollis ultrices. Curabitur auctor lectus et pretium fringilla. Phasellus dignissim enim et leo cursus fringilla</p>
+        <figure class="vf-figure">
+          <a href="#"><img src="{{section.img.url}}" title="some img title" alt="some img title"></a>
+        </figure>
+      </article>
+    </div>
+  </section>
+</div>
+
+
+@@include('./footer.html')
+   </div>
 
     <div class="vf-section-content">
       <article class="vf-summary">
