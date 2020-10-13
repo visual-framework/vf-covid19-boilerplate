@@ -1,30 +1,14 @@
 # VF Covid19 Build Boilerplate
 
-A mininimal implementation to build VF 2.0 components into static CSS and JS to build Covid19 portals.
+Guidance, documentation and portable CSS+JS to build a site based off the [Covid19DataPortal.org](https://www.covid19dataportal.org/) look and UX (a [Visual Framework 2.0](https://visual-framework.github.io/vf-core/) site).
 
-> Looking for other ways to use Visual Framework 2.0 components?
-> [See the guide](https://visual-framework.github.io/vf-welcome/building/)
+```html
+CSS and JS URL here
+```
 
-## Creating a new project powered by vf-covid19-boilerplate
+[View the documentation and guidance](https://visual-framework.github.io/vf-covid19-boilerplate/)
 
-There are two methods you can use:
-
-1. Use the interactive yarn template [RECOMMENDED]
-    - If you don't have npm, [install it](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-    - The [`create-vf-project`](https://github.com/visual-framework/create-vf-project) allows you to interactively create a new site by typing<br/> `yarn create @visual-framework/vf-project your-new-site-name vf-build-boilerplate`
-    - Follow the prompts
-1. The GitHub template
-    - Click the "[Use this template](https://help.github.com/en/articles/creating-a-repository-from-a-template)" method; quick url: https://github.com/visual-framework/vf-covid19-boilerplate/generate
-    - Follow the prompts and then clone the new project to your local machine
-
-## Configuring the build
-
-- In `package.json` update `vfConfig`
-- If you need any ad hoc CSS and JS, add it in `./src/components/vf-local-overrides`
-
-Otherwise configure gulp like any other project.
-
-## Building assets, developing 
+## Developing 
 
 1. You'll need to [install npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 1. If you don't have `yarn`, install it
@@ -52,7 +36,7 @@ To add a component, use the command line or install it manually.
 
 ## Troubleshooting
 
-Having problems? See https://visual-framework.github.io/vf-welcome/troubleshooting/
+Having problems? See https://visual-framework.github.io/vf-core/troubleshooting/
 
 ## Footnotes
 
