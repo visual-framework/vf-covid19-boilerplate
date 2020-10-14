@@ -42,7 +42,7 @@ const deployDirectory = config.vfConfig.vfDeployDirectory || "vf-covid19-boilerp
 // Tasks to build/run vf-core component system
 require('./node_modules/\@visual-framework/vf-core/gulp-tasks/_gulp_rollup.js')(gulp, path, componentPath, componentDirectories, buildDestionation);
 
-// Watch folders for changess
+// Watch folders for changes
 gulp.task('watch', function() {
   gulp.watch(['./src/components/**/*.scss', '!./src/components/**/package.variables.scss'], gulp.parallel('vf-css'));
   gulp.watch(['./src/components/**/*.js'], gulp.parallel('vf-scripts'));
@@ -107,8 +107,8 @@ gulp.task('pages', function(){
 gulp.task('browser-sync', function(done) {
   browserSync.init({
     server: {
-          baseDir: './build',
-          index: buildDestionation+'/index.html'
+          baseDir: buildDestionation,
+          index: '/index.html'
         }
   });
   done();
@@ -119,7 +119,6 @@ gulp.task('browser-reload', function(done) {
   done();
 });
 
-
 // Let's build this sucker.
 gulp.task('build', gulp.series(
   'vf-clean',
@@ -129,8 +128,6 @@ gulp.task('build', gulp.series(
   'set-to-static-build',
   'build-assets',
   'build-copy'
-
-
 ));
 
 // Build and watch things during dev
