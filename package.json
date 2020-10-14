@@ -29,6 +29,7 @@
   "dependencies": {
     "@visual-framework/embl-grid": "2.0.4",
     "@visual-framework/vf-banner": "1.5.0",
+    "@visual-framework/vf-card": "^2.2.0",
     "@visual-framework/vf-code-example": "1.0.1",
     "@visual-framework/vf-content": "1.2.3",
     "@visual-framework/vf-core": "2.2.7",
