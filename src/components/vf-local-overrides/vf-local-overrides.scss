@@ -1,15 +1,117 @@
 // vf-local-overrides
 
-// **Thinking about deleting this file?**
-// If your component needs no CSS/Sass, we still recommend leaving the
-// scss files in place. As this is primarily a CSS framework, it is better to
-// leave the empty files so you know a file wasn't accidently omitted.
-// If you don't have any Sass, you can trim this block down to:
-// "This page was intentionally left blank"
-
-
 @import 'vf-local-overrides.variables.scss';
 
-.vf-local-overrides {
-  /* your settings here */
+/*** For Header **/
+.vf-logo__image {
+  height: 55px;
+  margin: 0.5rem 0;
 }
+
+.vf-global-header {
+  border-bottom: none;
+}
+
+@media (max-width:520px) {
+  .vf-global-header__inner {
+      display: block
+  }
+}
+/*** End for Header **/
+
+/*** For Homepage hero **/
+.hero {
+  height: 240px;
+  overflow: hidden;
+  background: #c3ddee;
+  /* background: linear-gradient(90deg, rgba(210,234,206,1) 0%, rgba(233,233,233,1) 35%); */
+  background-image: url(../images/CV19DP_banner.jpg);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+
+  text-shadow: 1px 1px 3px #c3ddee;
+}
+
+.hero-search {
+  overflow: hidden;
+  background: rgb(195,221,238);
+  background: linear-gradient(90deg, rgba(195,221,238,1) 0%, rgba(241,241,241,1) 31%);
+}
+
+.hero-thin {
+  overflow: hidden;
+  background: #c3ddee;
+  background-image: url(../images/CV19DP_banner.jpg);
+  background-repeat: no-repeat;
+}
+/*** End For Homepage hero **/
+
+/*** For SubNav **/
+.vf-navigation--main .vf-navigation__list {
+  padding-left: 0;
+}
+
+@media (max-width:520px) {
+  .cv19-app-nav-container  {
+      border-top: 1px solid #333;
+  }
+
+  .vf-navigation--main .vf-navigation__list {
+      flex: 0 0 calc(50% - 20px);
+      flex-wrap: wrap;
+      padding: 0;
+  }
+
+  .vf-navigation--main .vf-navigation__item {
+      display: block;
+      -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      margin: 2px;
+      position: static;
+  }
+}
+
+.vf-navigation--main .vf-navigation__link {
+  color: #379dd8;
+  text-transform: capitalize;
+  font-weight:  600;
+  font-size:  1.4em;
+}
+
+.vf-navigation--main .vf-navigation__link:focus, .vf-navigation--main .vf-navigation__link:hover {
+  color: #0c7abf;
+}
+/*** End For SubNav **/
+
+/*** For Homepage cards **/
+@media (min-width:1220px) {
+  .vf-grid--has-sidebar>:last-child {
+      position: relative;
+      padding-left: 24px
+  }
+  .vf-grid--has-sidebar>:last-child:before {
+      background-color: #d8d8d8;
+      content: "";
+      height: 100%;
+      left: calc(var(--page-grid-gap) / -2);
+      position: absolute;
+      width: 1px
+  }
+}
+
+@media (min-width:846px) and (max-width:1219px) {
+  .vf-grid--has-sidebar>:last-child {
+      padding-left: 24px
+  }
+}
+
+article.vf-summary a {
+  margin-bottom: 1rem;
+}
+
+#participate-container .vf-card-container__inner {
+  padding: 0px;
+}
+/*** End For Homepage cards **/
