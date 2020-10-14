@@ -18,14 +18,13 @@ gulp.task('watch', function() {
   gulp.watch(['./build/**/*'], gulp.series('browser-reload'));
 });
 
-gulp.task('build-html', function(done) {
-  gulp.src('./src/pages/**/*.html') // important: only on html files
+gulp.task('build-html', function() {
+  return gulp.src('./src/pages/**/*.html') // important: only on html files
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
     }))
     .pipe(gulp.dest(buildDestionation));
-  done();
 });
 
 // Copy local assets to the build directory
