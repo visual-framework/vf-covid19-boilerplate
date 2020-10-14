@@ -14,14 +14,13 @@ require('./node_modules/\@visual-framework/vf-extensions/gulp-tasks/_gulp_rollup
 gulp.task('watch', function() {
   gulp.watch(['./src/components/**/*.scss', '!./src/components/**/package.variables.scss'], gulp.parallel('vf-css'));
   gulp.watch(['./src/components/**/*.js'], gulp.parallel('vf-scripts'));
-  //gulp.watch(['./src/pages/**/*'], gulp.series('pages','fileinclude'));
   gulp.watch(['./src/pages/**/*.html'], gulp.series('pages', 'fileinclude'));
   gulp.watch(['./src/pages/images/*.{svg,png,jpg,gif}'], gulp.series('build-copy'));
   gulp.watch(['./build/**/*'], gulp.series('browser-reload'));
 });
 
 gulp.task('fileinclude', function(done) {
-  gulp.src('./src/pages/**/*')
+  gulp.src('./src/pages/**/*.html') // important: only on html files
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
@@ -30,16 +29,9 @@ gulp.task('fileinclude', function(done) {
   done();
 });
 
-// Fix to avoid corrupt images
-gulp.task('build-copy', function(done){
-  return gulp.src(['./src/pages/images/*.{svg,png,jpg,gif}'])
-    .pipe(gulp.dest(buildDestionation + '/images'));
-  // done();
-});
-
 // Copy pages to the build directory
 gulp.task('pages', function(){
-  return gulp.src('./src/pages/**/*.html')
+  return gulp.src('./src/pages/**/*')
     .pipe(gulp.dest(buildDestionation));
 });
 
@@ -62,20 +54,15 @@ gulp.task('browser-reload', function(done) {
 // Let's build this sucker.
 gulp.task('build', gulp.series(
   'vf-clean',
-
   gulp.parallel('pages','vf-css','vf-scripts','vf-component-assets'),
-  'fileinclude',
-  'build-copy'
+  'fileinclude'
 ));
 
 // Build and watch things during dev
 gulp.task('dev', gulp.series(
   'vf-clean',
-
   gulp.parallel('pages','vf-css','vf-scripts','vf-component-assets'),
   'fileinclude',
-
-  'build-copy',
   'browser-sync',
   gulp.parallel('watch','vf-watch')
 ));
