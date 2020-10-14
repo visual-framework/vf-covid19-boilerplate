@@ -12,8 +12,6 @@ require('./node_modules/\@visual-framework/vf-extensions/gulp-tasks/_gulp_rollup
 
 // Watch folders for changes
 gulp.task('watch', function() {
-  gulp.watch(['./src/components/**/*.scss', '!./src/components/**/package.variables.scss'], gulp.parallel('vf-css'));
-  gulp.watch(['./src/components/**/*.js'], gulp.parallel('vf-scripts'));
   gulp.watch(['./src/pages/**/*'], gulp.parallel('build-assets', 'build-html'));
   gulp.watch(['./build/**/*'], gulp.series('browser-reload'));
 });
