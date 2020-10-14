@@ -2,13 +2,21 @@
 
 Guidance, documentation and portable CSS+JS to build a site based off the [Covid19DataPortal.org](https://www.covid19dataportal.org/) look and UX (a [Visual Framework 2.0](https://visual-framework.github.io/vf-core/) site).
 
+## CSS and JS
+
+For basic styles and optional JS, include these files
 ```html
-CSS and JS URL here
+  <link rel="stylesheet" media="all" href="https://visual-framework.github.io/vf-covid19-boilerplate/css/styles.css" />
+  <script src="https://visual-framework.github.io/vf-covid19-boilerplate/scripts/scripts.js"></script>
 ```
 
-[View the documentation and guidance](https://visual-framework.github.io/vf-covid19-boilerplate/)
+## HTML and how to
 
-## Developing 
+For HTML snippets and further and guidance view [visual-framework.github.io/vf-covid19-boilerplate](https://visual-framework.github.io/vf-covid19-boilerplate/)
+
+---
+
+## Developing this boilerplate
 
 1. You'll need to [install npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 1. If you don't have `yarn`, install it
