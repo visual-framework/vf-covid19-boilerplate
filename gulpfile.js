@@ -20,18 +20,6 @@ gulp.task('watch', function() {
   gulp.watch(['./build/**/*'], gulp.series('browser-reload'));
 });
 
-gulp.task('set-to-development', function(done) {
-  process.argv.push('--serve');
-  fractalBuildMode = 'server';
-  done();
-});
-
-gulp.task('set-to-static-build', function(done) {
-  process.argv.push('--quiet');
-  fractalBuildMode = 'dataobject'; // run fractal in server mode as there's no need for static html assets
-  done();
-});
-
 gulp.task('fileinclude', function(done) {
   gulp.src('./src/pages/**/*')
     .pipe(fileinclude({
@@ -77,7 +65,6 @@ gulp.task('build', gulp.series(
 
   gulp.parallel('pages','vf-css','vf-scripts','vf-component-assets'),
   'fileinclude',
-  'set-to-static-build',
   'build-copy'
 ));
 
@@ -87,7 +74,6 @@ gulp.task('dev', gulp.series(
 
   gulp.parallel('pages','vf-css','vf-scripts','vf-component-assets'),
   'fileinclude',
-  'set-to-development',
 
   'build-copy',
   'browser-sync',

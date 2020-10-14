@@ -15,6 +15,7 @@
     "vfNamespace": "covid19-",
     "vfComponentPath": "./src/components",
     "vfBuildDestination": "./build/vf-covid19-boilerplate",
+    "vfBuildFractalMode": "dataObject",
     "vfThemePath": "@frctl/mandelbrot",
     "vfDeployDirectory": "vf-covid19-boilerplate"
   },
