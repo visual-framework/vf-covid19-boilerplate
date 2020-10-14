@@ -78,7 +78,7 @@ gulp.task('fileinclude', function(done) {
 gulp.task('build-copy', function(done){
   return gulp.src(['./src/pages/images/*.{svg,png,jpg,gif}'])
     .pipe(gulp.dest(buildDestionation + '/images'));
-  done();
+  // done();
 });
 
 // Run build-assets, but only after we wait for fractal to bootstrap
@@ -98,18 +98,17 @@ gulp.task('build-assets', function(done) {
 
 // Copy pages to the build directory
 gulp.task('pages', function(){
-  return gulp.src('./src/pages/**/*')
+  return gulp.src('./src/pages/**/*.html')
     .pipe(gulp.dest(buildDestionation));
-
 });
 
 // Serve locally
 gulp.task('browser-sync', function(done) {
   browserSync.init({
     server: {
-          baseDir: buildDestionation,
-          index: '/index.html'
-        }
+      baseDir: buildDestionation,
+      index: '/index.html'
+    }
   });
   done();
 });
