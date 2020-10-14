@@ -49,6 +49,7 @@
     "@visual-framework/vf-no-js": "1.0.0",
     "@visual-framework/vf-sass-config": "1.4.3",
     "@visual-framework/vf-sass-utilities": "1.0.1",
+    "@visual-framework/vf-section-header": "^1.2.2",
     "@visual-framework/vf-text": "1.0.2",
     "@visual-framework/vf-utility-classes": "1.2.0"
   },
