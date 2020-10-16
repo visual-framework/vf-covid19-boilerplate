@@ -678,7 +678,7 @@ html, button {
   }
 }
 /* stylelint-enable order/order */
-/* Notice: Couldn't find vf-inlay/vf-inlay.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-inlay/vf-inlay.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
 /*!
  * Component: @visual-framework/vf-grid-page
  * Version: 3.0.0
@@ -934,7 +934,7 @@ a.vf-badge--outline[class*=tertiary]:hover {
   background-color: transparent;
 }
 
-/* Notice: Couldn't find vf-collapse/vf-collapse.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-collapse/vf-collapse.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
 /*!
  * Component: @visual-framework/vf-link
  * Version: 1.0.3
@@ -1132,9 +1132,9 @@ a.vf-badge--outline[class*=tertiary]:hover {
   }
 }
 
-/* Notice: Couldn't find vf-embed/vf-embed.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find embl-logo/embl-logo.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find vf-explainer/vf-explainer.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-embed/vf-embed.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find embl-logo/embl-logo.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-explainer/vf-explainer.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
 /*!
  * Component: @visual-framework/vf-form__core
  * Version: 1.0.4
@@ -1929,7 +1929,7 @@ html:not(.vf-disable-deprecated) .vf-text-button--1 {
   margin-bottom: 24px;
 }
 
-/* Notice: Couldn't find embl-conditional-edit/embl-conditional-edit.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find embl-conditional-edit/embl-conditional-edit.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
 /* All Visual Framework Blocks */
 /*!
  * Component: @visual-framework/vf-box
@@ -2072,10 +2072,10 @@ html:not(.vf-disable-deprecated) .vf-text-button--1 {
   border-width: 2px;
 }
 
-/* Notice: Couldn't find vf-box/vf-box--inlay.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find vf-box/vf-box--factoid.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find vf-breadcrumbs/vf-breadcrumbs.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find vf-breadcrumbs/vf-breadcrumbs--with-related.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-box/vf-box--inlay.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-box/vf-box--factoid.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-breadcrumbs/vf-breadcrumbs.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-breadcrumbs/vf-breadcrumbs--with-related.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
 /*!
  * Component: @visual-framework/vf-card
  * Version: 2.2.0
@@ -2265,8 +2265,8 @@ html:not(.vf-disable-deprecated) .vf-text-button--1 {
   --vf-card-theme-color--background: #f4c61f;
 }
 
-/* Notice: Couldn't find vf-card-container/vf-card-container.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find vf-discussion/vf-discussion.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-card-container/vf-card-container.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-discussion/vf-discussion.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
 /*!
  * Component: @visual-framework/vf-code-example
  * Version: 1.0.1
@@ -2388,10 +2388,10 @@ html:not(.vf-disable-deprecated) .vf-text-button--1 {
   font-weight: bold;
 }
 
-/* Notice: Couldn't find vf-page-header/vf-page-header.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find vf-link-list/vf-link-list.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find vf-header/vf-header.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find vf-hero/vf-hero.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-page-header/vf-page-header.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-link-list/vf-link-list.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-header/vf-header.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-hero/vf-hero.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
 /*!
  * Component: @visual-framework/vf-lede
  * Version: 1.0.1
@@ -2423,8 +2423,8 @@ html:not(.vf-disable-deprecated) .vf-text-button--1 {
   text-decoration: underline;
 }
 
-/* Notice: Couldn't find vf-masthead/vf-masthead.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find vf-masthead/vf-masthead--supports.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-masthead/vf-masthead.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-masthead/vf-masthead--supports.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
 /*!
  * Component: @visual-framework/vf-navigation
  * Version: 1.2.5
@@ -2703,11 +2703,11 @@ html.vf-global-layout--hard::before {
   margin-top: 16px;
 }
 
-/* Notice: Couldn't find vf-activity-list/vf-activity-list.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find vf-article-meta-information/vf-article-meta-information.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find vf-profile/vf-profile.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find vf-search/vf-search.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find vf-social-links/vf-social-links.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-activity-list/vf-activity-list.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-article-meta-information/vf-article-meta-information.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-profile/vf-profile.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-search/vf-search.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-social-links/vf-social-links.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
 /*!
  * Component: @visual-framework/vf-summary
  * Version: 1.3.1
@@ -3260,8 +3260,8 @@ html:not(.vf-disable-deprecated) .vf-summary--profile-s .vf-summary__title {
   grid-column: 2/-1;
 }
 
-/* Notice: Couldn't find vf-video/vf-video.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find vf-video-teaser/vf-video-teaser.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-video/vf-video.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-video-teaser/vf-video-teaser.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
 /*!
  * Component: @visual-framework/vf-global-header
  * Version: 3.0.0
@@ -3309,13 +3309,13 @@ html:not(.vf-disable-deprecated) .vf-global-header__inner {
   width: 100%;
 }
 
-/* Notice: Couldn't find vf-tabs/vf-tabs.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find vf-table/vf-table.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find embl-breadcrumbs-lookup/embl-breadcrumbs-lookup.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find vf-pagination/vf-pagination.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find vf-pagination/vf-pagination--full.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-tabs/vf-tabs.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-table/vf-table.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find embl-breadcrumbs-lookup/embl-breadcrumbs-lookup.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-pagination/vf-pagination.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-pagination/vf-pagination--full.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
 /* All Visual Framework Containers */
-/* Notice: Couldn't find vf-activity-group/vf-activity-group.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-activity-group/vf-activity-group.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
 /*!
  * Component: @visual-framework/vf-intro
  * Version: 1.3.2
@@ -3433,7 +3433,7 @@ html:not(.vf-disable-deprecated) .vf-global-header__inner {
   text-decoration: underline;
 }
 
-/* Notice: Couldn't find embl-content-hub-loader/embl-content-hub-loader.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find embl-content-hub-loader/embl-content-hub-loader.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
 /*!
  * Component: @visual-framework/vf-banner
  * Version: 1.5.0
@@ -3677,15 +3677,15 @@ html:not(.vf-disable-deprecated) .vf-global-header__inner {
   }
 }
 
-/* Notice: Couldn't find vf-news-container/vf-news-container.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find vf-video-container/vf-video-container.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find vf-footer/vf-footer.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
-/* Notice: Couldn't find vf-tree/vf-tree.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-news-container/vf-news-container.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-video-container/vf-video-container.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-footer/vf-footer.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-tree/vf-tree.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
 /* All Visual Framework Boilerplates */
 /* All Visual Framework Deprecated components */
-/* Notice: Couldn't find vf-deprecated/vf-deprecated.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-deprecated/vf-deprecated.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
 /* EBI Specific components */
-/* Notice: Couldn't find ebi-vf1-integration/ebi-vf1-integration.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find ebi-vf1-integration/ebi-vf1-integration.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
 /* All Visual Framework Utility and high-specificity components */
 /*!
  * Component: @visual-framework/vf-heading
@@ -6456,7 +6456,7 @@ body {
   grid-row-gap: 32px;
 }
 
-/* Notice: Couldn't find vf-somepattern/vf-i-dont-exist.scss referenced in /Users/sandeep/sites/projects/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
+/* Notice: Couldn't find vf-somepattern/vf-i-dont-exist.scss referenced in /Users/pwalter/scm/github/visual-framework/vf-covid19-boilerplate/src/components/vf-componenet-rollup/index.scss, the CSS won't be included in the build. If this is expected, you might want to comment out the dependency. */
 .vf-sample {
   border-bottom: 1px dashed #d0d0ce;
 }
