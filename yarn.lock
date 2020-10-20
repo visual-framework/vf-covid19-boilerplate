@@ -1170,7 +1170,23 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__checkbox/-/vf-form__checkbox-1.0.2.tgz#8b70d71c2c758a83ff136fcb106b36236cb35ade"
   integrity sha512-+KhXL1bruzlTJItn7BGoOoxpH9iaA+/EQz2cM0jccAxIc2x4IFPzZrcrJJuX16if7UXWpYD1YUb9kfOFLRJDSw==
 
-"@visual-framework/vf-form__core@1.0.4", "@visual-framework/vf-form__core@^1.0.4":
+"@visual-framework/vf-form__core@1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__core/-/vf-form__core-1.0.5.tgz#148c298ba42013690b25831b1298def98888f985"
+  integrity sha512-0F79ATdnu6mTGQYGYIi5Pd0rGFfFDa9x+X+Y/hcBc0qxbuO5b/tKrAJRqIkHply7c4w5ptVv45bjnaDnR8u8zQ==
+  dependencies:
+    "@visual-framework/vf-form__checkbox" "^1.0.2"
+    "@visual-framework/vf-form__fieldset" "^1.1.0"
+    "@visual-framework/vf-form__helper" "^1.0.0"
+    "@visual-framework/vf-form__input" "^1.1.0"
+    "@visual-framework/vf-form__item" "^1.0.0"
+    "@visual-framework/vf-form__label" "^1.2.0"
+    "@visual-framework/vf-form__legend" "^1.1.0"
+    "@visual-framework/vf-form__radio" "^1.0.1"
+    "@visual-framework/vf-form__select" "^1.0.1"
+    "@visual-framework/vf-form__textarea" "^1.0.2"
+
+"@visual-framework/vf-form__core@^1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__core/-/vf-form__core-1.0.4.tgz#ea5716267d7642d28c0e7411976c45945de8adfe"
   integrity sha512-dVIiHfftRNXDmzTIj7jBr9XQHvbsXCBhdo1boVi4k3RdgAQwi2CLHAGIZUBB4G8vECTef+M5V3OWWDDs84cdtw==
@@ -1190,6 +1206,11 @@
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__fieldset/-/vf-form__fieldset-1.0.1.tgz#e871f137e46a9fdf4ebb03eff72124407c0f0a71"
   integrity sha512-wfKuw4/NO5ES9hppOgAYApdUhIbzLJdC/Ap9JZU4umJXVEAOL8PY0/ur4HFJFEo83h0dTYlLZB5iy/RTIG/pHg==
+
+"@visual-framework/vf-form__fieldset@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__fieldset/-/vf-form__fieldset-1.1.0.tgz#48f0cf2d595c9f990c14676513fb1c0370386282"
+  integrity sha512-/QiYSjSZRVDk06v/9HM6fuEyNyaWjHxeDbB4R8y/NfB0FdtnYzFJ+iJB4Djvts5h6tvR3BtfZ+dk4iUV2v8RRA==
 
 "@visual-framework/vf-form__helper@^1.0.0":
   version "1.0.0"
@@ -1211,10 +1232,20 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__label/-/vf-form__label-1.0.1.tgz#0d4fbba84ce3a7b20668f9a3448a9c4222ff2e0e"
   integrity sha512-Vju04fr517KSHFzshLLrUrxavLHzxvdhBYpVxyeRpnmawHkEZfwW95tyZ/WJs1JnG4Fa4iVOclA6smg0ySKg9A==
 
+"@visual-framework/vf-form__label@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__label/-/vf-form__label-1.2.0.tgz#c7c7851f6920b5d58164d0c8dfcab316030fdeb1"
+  integrity sha512-OB1/Ux9sn9BfLKrqRQ5ZaIMWVLdqYfEEaaWCl71OL163XpgjkPowEk+e9K1sn9QSYgS95KHQerIA7KbCpE+z8w==
+
 "@visual-framework/vf-form__legend@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__legend/-/vf-form__legend-1.0.1.tgz#5627eb7db87b55523c6faadccf2e9972cb179026"
   integrity sha512-Lhlk8/i5x4Vg4B6whh6iLT03uYpkr/wOHLKwkFOf6QmPd4gMFeCrBZe8bMcfQ605Mxwhw4Ajf0/gILTFjN3fPA==
+
+"@visual-framework/vf-form__legend@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__legend/-/vf-form__legend-1.1.0.tgz#e735fb34ebec7bc504f47ccb337e319c53c6e16f"
+  integrity sha512-i0rXuYMy6eyTndeKBPQGOhDCrU5op3D346gBOEdUUh1lVP6WmiV8wUCrMnTtOd6KfjQmfDUv+OX47PvyqtXU4Q==
 
 "@visual-framework/vf-form__radio@^1.0.1":
   version "1.0.1"
