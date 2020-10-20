@@ -1059,10 +1059,10 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-card/-/vf-card-2.2.0.tgz#d78f72a9e881d0d089ed69b36b4720ea9dc8c637"
   integrity sha512-wDL7oYHJHoATwqe13hUrwN2vBUt/xBm/0xOvPxHJZJqPQw7UlGbxvLpMHRwCRZi0c+PqnKViloRNt6iMLNFeXQ==
 
-"@visual-framework/vf-code-example@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-code-example/-/vf-code-example-1.0.1.tgz#df95814e051849b652e12c738d26b87998afb4dc"
-  integrity sha512-RBbRtyVB/t4XAUxmU3gNIB2IfqJiXyzfSs6YJ+blxwu2mKFe+2bTEMzXNEjye9rSUfYnHkTNcpa0sl1VPwLA9w==
+"@visual-framework/vf-code-example@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-code-example/-/vf-code-example-1.1.0.tgz#bd93d96495c5a2514fb1eed9992251b66b4823f4"
+  integrity sha512-DDdlLAvfzfbUNxOkF4d91I60xcn062tAokEi6D1taQFTOm49IXfTnpn12BgwC5O3nOJNezJDcBoytQrY8J32jw==
 
 "@visual-framework/vf-component-generator@^1.0.2":
   version "1.0.2"
