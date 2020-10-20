@@ -28,7 +28,7 @@
     "deploy": "gh-pages -d build/vf-covid19-boilerplate"
   },
   "dependencies": {
-    "@visual-framework/embl-grid": "2.0.4",
+    "@visual-framework/embl-grid": "2.1.0",
     "@visual-framework/vf-banner": "1.5.0",
     "@visual-framework/vf-card": "2.2.0",
     "@visual-framework/vf-code-example": "1.0.1",
