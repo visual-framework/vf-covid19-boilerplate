@@ -24,8 +24,8 @@ For HTML snippets and further and guidance view [visual-framework.github.io/vf-c
 1. Install all the things
    - `yarn install`
 1. Generate the site in `/build`
-   - `gulp build` build static assets
-   - `gulp dev` renders and serves
+   - `yarn run build` build static assets
+   - `yarn run dev` renders and serves
 1. Deploy in Github Pages `/build` folder
    - `yarn deploy` build folder will get deployed to gh-pages branch
 
